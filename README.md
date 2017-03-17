@@ -16,7 +16,7 @@ python websocket_server.py
 Then open up the websocket.html in google chrome or whatever browser you're using. You should be able to see the websockets connecting either through the terminal window (server side) or you can open up dev tools on your browser window and you can see it from there (client side). You should also see on the client side the time it took to process the 10000 requests. you can also open up your table in your database and check that there are indeed 10000 new entries written into it. 
 
 # Dicussion
-From running the code/test, I found that that took 317.579ms to process the 10000 requests and to insert 10000 new rows into a database. this has no signifigant meaning right now since there is nothing to compare it to yet for now....
+From running the code/test, I found that it took 317.579ms to process the 10000 requests and to insert 10000 new rows into a database. This has no signifigant meaning right now since there is nothing to compare it to yet for now....
 
 # Future TO DOs
 Create the same thing but using ajax and do a comparision in the time it takes to complete the 10000 requests. Websockets should be faster since there is less overhead in the header since we only have to send it once in the handshake initiation. 
