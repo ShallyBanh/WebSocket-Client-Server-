@@ -7,7 +7,18 @@
     ws.onopen = function()
     {
         console.log("Connection Established");
-        ws.send("Is this working");
+        console.time("Established");
+        console.log("begin......");
+     
+        //send 10000 requests 
+        for(i =0; i< 10000; i++)
+        {
+            ws.send(i);
+        }
+     
+        //log the time it took to send and process the requests 
+        console.timeEnd("Established");
+        console.log(".....end");
     }
 
     ws.onmessage = function(msg)
