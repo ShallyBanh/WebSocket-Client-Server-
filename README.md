@@ -11,7 +11,9 @@ Anyways in order for the code to run, i created a new random database called "te
 
 In order to run the tests using the websocket protocol, in the terminal run:
 
+```
 python websocket_server.py
+```
 
 Then open up the websocket.html in google chrome or whatever browser you're using. You should be able to see the websockets connecting either through the terminal window (server side) or you can open up dev tools on your browser window and you can see it from there (client side). You should also see on the client side the time it took to process the 100 requests. you can also open up your table in your database and check that there are indeed 100 new entries written into it. 
 
