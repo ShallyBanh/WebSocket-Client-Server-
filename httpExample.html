@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <meta charset="utf-8" />
+    <body onload="main()">
+    <script language="javascript" type="text/javascript">
+        var xmlhttp = new XMLHttpRequest();
+
+        function testRequests(num) 
+        {
+            xmlhttp.open("POST", "http://localhost:8883", true);
+            xmlhttp.send(num);
+        }
+
+        function main()
+        {
+            console.log("Connection Established");
+            console.time("Established");
+            console.log("begin......");
+            //send the requests
+            for(i =0; i< 100; i++)
+            {
+                testRequests(i);
+            }
+            console.timeEnd("Established");
+            console.log(".....end");
+        }
+    </script>
+    </body>
+</html>
