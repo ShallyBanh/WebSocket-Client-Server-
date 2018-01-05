@@ -19,7 +19,7 @@ Then open up the websocket.html in google chrome or whatever browser you're usin
 
 In order to run the tests using the HTTP protocol, do the same as you did for the websocket expect using Http.py and httpExample.html
 
-# Dicussion
+# Discussion
 From running the code/test, I found that for the Websocket protocol it took 10.607ms to process the 100 requests. For the Http protocol i found that it took 265.654ms. As you can see it is way faster to use websockets because in websockets it only sends http in the header once (to establish a handshake between client and server) but for http protocol it sends http in the header each time a request is made.
 
 # Future TO DOs
